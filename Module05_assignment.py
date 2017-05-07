@@ -78,4 +78,4 @@ while (strChoice != 0):
         objFile = open("ToDo.txt", "w")
         objFile.write(str(lstTable))
         objFile.close()
-        print("Thank you! Your data was saved.")
+    print("Thank you! Your data was saved.")
