@@ -31,17 +31,16 @@ while (strChoice != 0):
         objFile = open("ToDo.txt", "w")
         objFile.write(str(lstTable))
         objFile.close()
-    print("Your data was saved. Goodbye!")
-    break
+        print("Your data was saved. Goodbye!")
+        break
 
     # Shows current data table
     if (strChoice.strip() == '1'):
         print("\nYour current data is:\n")
         for index, item in enumerate(lstTable):
             print("{} - {}".format(index, item))
-
-            print("Please select a user option:")
-            continue
+        print("Please select a user option:")
+        continue
 
     if (strChoice.strip() == '2'):
         # Ask user for two new user inputs (task, priority).
@@ -71,7 +70,7 @@ while (strChoice != 0):
         for index, item in enumerate(lstTable):
             if index == strItemDelete:
                 value = item
-        lstTable.remove(value)
+                lstTable.remove(value)
 
     # 6) Saves data in the ToDO.txt file
     if (strChoice.strip() == '4'):
